@@ -21,7 +21,7 @@ class IntroView extends StatelessWidget {
               fit: BoxFit.fill,
             ),
             Positioned(
-              top: 200,
+              top: 180,
               left: 30,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -36,10 +36,10 @@ class IntroView extends StatelessWidget {
                     'HOME BEAUTIFUL',
                     style: getTitelstyle(
                         fontSize: 37,
-                        fontWeight: FontWeight.normal,
+                        fontWeight: FontWeight.w600,
                         color: AppColors.blackcolor),
                   ),
-                  const Gap(30),
+                  const Gap(50),
                   Padding(
                     padding: const EdgeInsets.only(
                       right: 10,
@@ -51,22 +51,24 @@ class IntroView extends StatelessWidget {
                         Text(
                           'The best simple place where you ',
                           style: getTitelstyle(
-                              fontSize: 22,
+                              fontSize: 18,
                               color: AppColors.grey2color,
                               fontWeight: FontWeight.normal),
                         ),
+                        const Gap(10),
                         Text(
                           'discover most wonderful furnitures',
                           style: getTitelstyle(
                               color: AppColors.grey2color,
-                              fontSize: 22,
+                              fontSize: 18,
                               fontWeight: FontWeight.normal),
                         ),
+                        const Gap(10),
                         Text(
                           'and make your home beautiful',
                           style: getTitelstyle(
                               color: AppColors.grey2color,
-                              fontSize: 22,
+                              fontSize: 18,
                               fontWeight: FontWeight.normal),
                         ),
                         const Gap(150),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/core/utils/app_colors.dart';
 import 'package:flutter_application_2/core/utils/text_style.dart';
-import 'package:flutter_application_2/features/intro/intro_view.dart';
+import 'package:flutter_application_2/features/navbar/navbar_view.dart';
 
 void main() {
   runApp(const MainApp());
@@ -27,7 +27,6 @@ class MainApp extends StatelessWidget {
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15),
               borderSide: BorderSide.none,
-              
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15),
@@ -42,7 +41,7 @@ class MainApp extends StatelessWidget {
               borderSide: BorderSide.none,
             ),
           )),
-      home: const IntroView(),
+      home: const NavbarView(),
     );
   }
 }
