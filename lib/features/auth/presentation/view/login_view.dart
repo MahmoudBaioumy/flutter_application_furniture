@@ -5,6 +5,7 @@ import 'package:flutter_application_2/core/utils/app_colors.dart';
 import 'package:flutter_application_2/core/utils/text_style.dart';
 import 'package:flutter_application_2/core/widgets/custom_but.dart';
 import 'package:flutter_application_2/features/auth/presentation/view/signup_view.dart';
+import 'package:flutter_application_2/features/navbar/navbar_view.dart';
 import 'package:gap/gap.dart';
 
 class LoginView extends StatefulWidget {
@@ -130,7 +131,9 @@ class _LoginViewState extends State<LoginView> {
                   Center(
                     child: CustomButton(
                       text: 'Log in',
-                      onPressed: () {},
+                      onPressed: () {
+                        pushwithReplacement(context, const NavbarView());
+                      },
                       background: AppColors.blackcolor,
                       height: 50,
                       width: 280,

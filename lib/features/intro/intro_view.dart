@@ -11,6 +11,13 @@ class IntroView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenheigth = MediaQuery.of(context).size.height;
+    double screenwith = MediaQuery.of(context).size.width;
+    Orientation orientation = Orientation.portrait;
+    double defaultSize = orientation == Orientation.landscape
+        ? screenheigth * .024
+        : screenwith * .024;
+    print(defaultSize);
     return Scaffold(
       body: SafeArea(
         child: Stack(
@@ -80,8 +87,8 @@ class IntroView extends StatelessWidget {
                               push(context, const LoginView());
                             },
                             background: AppColors.blackcolor,
-                            height: 60,
-                            width: 190,
+                            height: MediaQuery.of(context).size.height * 0.10,
+                            width: MediaQuery.of(context).size.width * 0.50,
                           ),
                         )
                       ],

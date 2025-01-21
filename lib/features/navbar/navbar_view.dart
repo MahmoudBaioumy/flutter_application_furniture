@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/core/utils/app_colors.dart';
+import 'package:flutter_application_2/features/Save/presention/view/save_view.dart';
 import 'package:flutter_application_2/features/home/presentaion/view/home_view.dart';
+import 'package:flutter_application_2/features/navbar/profile_view.dart';
+import 'package:flutter_application_2/features/noti/presention/view/noti_view.dart';
 import 'package:flutter_svg/svg.dart';
 
 class NavbarView extends StatefulWidget {
@@ -15,9 +18,9 @@ class _NavbarViewState extends State<NavbarView> {
   int _index = 0;
   final List<Widget> _pages = [
     const HomeView(),
-    const HomeView(),
-    const HomeView(),
-    const HomeView(),
+    const SaveView(),
+    const NotiView(),
+    const ProfileView(),
   ];
   @override
   Widget build(BuildContext context) {
